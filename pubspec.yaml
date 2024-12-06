@@ -1,6 +1,6 @@
 name: de_comp_core
 description: "A core functionality for DeComp"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/karroze/de_comp_core
 
 environment:
@@ -12,6 +12,4 @@ dependencies:
   rxdart: ^0.28.0
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   very_good_analysis: ^6.0.0
