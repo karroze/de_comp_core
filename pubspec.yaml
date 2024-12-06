@@ -1,7 +1,7 @@
 name: de_comp_core
 description: "A core functionality for DeComp"
 version: 0.0.1
-homepage: none
+homepage: https://github.com/karroze/de_comp_core
 
 environment:
   sdk: ^3.5.4
