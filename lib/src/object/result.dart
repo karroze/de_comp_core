@@ -1,5 +1,6 @@
 import 'package:meta/meta.dart';
 
+/// Base class to represent a Result of an operation.
 @optionalTypeArgs
 sealed class Result<SUCCESS_TYPE, FAILURE_TYPE> {
   const Result._();
@@ -15,6 +16,7 @@ sealed class Result<SUCCESS_TYPE, FAILURE_TYPE> {
   });
 }
 
+/// Base class to represent a Successful Result of an operation.
 final class ResultSuccess<SUCCESS_TYPE, FAILURE_TYPE> extends Result<SUCCESS_TYPE, FAILURE_TYPE> {
   const ResultSuccess(this.value) : super._();
 
@@ -29,6 +31,7 @@ final class ResultSuccess<SUCCESS_TYPE, FAILURE_TYPE> extends Result<SUCCESS_TYP
   }
 }
 
+/// Base class to represent a Failed Result of an operation.
 final class ResultFailure<SUCCESS_TYPE, FAILURE_TYPE> extends Result<SUCCESS_TYPE, FAILURE_TYPE> {
   const ResultFailure(this.error) : super._();
 

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:meta/meta.dart';
 
+/// Wrapper to hold disposable info.
 @immutable
 class DisposableWrapper<T> {
   const DisposableWrapper({

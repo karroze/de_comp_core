@@ -4,6 +4,7 @@ import 'package:de_comp_core/src/disposable/disposable_mixin.dart';
 import 'package:de_comp_core/src/disposable/disposable_wrapper.dart';
 import 'package:rxdart/rxdart.dart';
 
+/// Stores disposable entries and allows centralised disposal of them.
 class DisposableHolder {
   final _disposables = <DisposableWrapper<Object?>>[];
 
@@ -37,7 +38,10 @@ class DisposableHolder {
         streamSubscription.cancel,
       );
 
-  void addCustomDisposable<T>(T disposable, FutureOr<Object?> Function() dispose) {
+  void addCustomDisposable<T>(
+    T disposable,
+    FutureOr<Object?> Function() dispose,
+  ) {
     if (!_disposables.contains(disposable)) {
       _disposables.add(
         DisposableWrapper<T>(
