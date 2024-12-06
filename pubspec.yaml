@@ -1,0 +1,17 @@
+name: de_comp_core
+description: "A core functionality for DeComp"
+version: 0.0.1
+homepage: none
+
+environment:
+  sdk: ^3.5.4
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^6.0.0
