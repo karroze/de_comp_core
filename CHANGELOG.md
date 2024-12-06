@@ -1,3 +1,7 @@
+## 0.0.4
+
+* Loosened dart version constraints to start from `3.5.0`
+
 ## 0.0.3
 
 * Removed no longer needed `flutter` and `flutter_test` dependencies
