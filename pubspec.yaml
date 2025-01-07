@@ -1,15 +1,14 @@
 name: de_comp_core
 description: "A core functionality for DeComp package. Contains pure Dart code without `flutter` dependency"
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/karroze/de_comp_core
 repository: https://github.com/karroze/de_comp_core
 environment:
   sdk: ^3.5.0
-  flutter: ">=3.2.0"
 
 dependencies:
   meta: ^1.15.0
   rxdart: ^0.28.0
 
 dev_dependencies:
-  very_good_analysis: ^6.0.0
+  very_good_analysis: ^7.0.0

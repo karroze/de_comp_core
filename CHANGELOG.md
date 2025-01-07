@@ -1,3 +1,6 @@
+## 0.0.6
+* Updated VGA version to `^0.0.7`, removed `flutter` environment requirements from `pubspec.yaml`
+
 ## 0.0.4
 
 * Loosened dart version constraints to start from `3.5.0`

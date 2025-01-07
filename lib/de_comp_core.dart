@@ -1,5 +1,5 @@
 /// DeComp core library
-library de_comp_core;
+library;
 
 export 'package:meta/meta.dart';
 export 'package:rxdart/rxdart.dart';
