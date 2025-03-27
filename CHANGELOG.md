@@ -1,4 +1,4 @@
-## 0.0.8
+## 0.0.7
 
 * Added new abstraction `StreamResultMeta` to support passing additional info with `StreamResult`
 * Slight refactoring of the old code
