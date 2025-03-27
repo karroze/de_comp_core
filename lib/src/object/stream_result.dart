@@ -1,3 +1,4 @@
+/// Represents a [Stream] result witch consists of [Data], [Loading] and nullable [Error].
 final class StreamResult<Data, Loading, Error> {
   const StreamResult({
     required this.data,

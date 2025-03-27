@@ -57,10 +57,13 @@ class DisposableHolder {
   }
 
   Future<void> dispose() async {
-    for (final disposable in _disposables) {
+    while (_disposables.isNotEmpty) {
+      final disposable = _disposables.first;
       await disposable.dispose();
+      if (_disposables.isNotEmpty) {
+        _disposables.removeAt(0);
+      }
     }
-    _disposables.clear();
   }
 }
 

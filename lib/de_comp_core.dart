@@ -12,5 +12,6 @@ export 'src/disposable/disposable_holder.dart';
 export 'src/disposable/disposable_holder_mixin.dart';
 export 'src/disposable/disposable_mixin.dart';
 export 'src/object/failure.dart';
+export 'src/object/stream_result_meta.dart';
 export 'src/object/result.dart';
 export 'src/object/stream_result.dart';

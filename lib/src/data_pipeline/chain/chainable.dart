@@ -3,8 +3,7 @@ import 'package:de_comp_core/src/data_pipeline/transform/chain_transformer.dart'
 import 'package:de_comp_core/src/data_pipeline/validator/chain_validator.dart';
 
 /// Represents a single Chain in a pipeline and provides API to chain with other.
-class Chainable<F, T>
-    with Linkable<Chainable<Object?, F>, Chainable<T, Object?>> {
+class Chainable<F, T> with Linkable<Chainable<Object?, F>, Chainable<T, Object?>> {
   Chainable.fromValue(this._value);
 
   final T _value;

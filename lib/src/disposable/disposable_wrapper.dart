@@ -17,11 +17,7 @@ class DisposableWrapper<T> {
   int get hashCode => Object.hash(instance, dispose);
 
   @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is DisposableWrapper &&
-          runtimeType == other.runtimeType &&
-          (instance == other.instance || identical(instance, other.instance));
+  bool operator ==(Object other) => other is DisposableWrapper && runtimeType == other.runtimeType && instance == other.instance;
 
   // Don't remove `async => await` form here
   Future<void> call() async => await dispose();
